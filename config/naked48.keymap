@@ -32,7 +32,7 @@
                 &kp Q    &kp W  &kp E     &kp R    &kp T    &trans                     &trans  &kp Y    &kp U     &kp I   &kp O     &kp P
                 &hm LSHIFT A  &kp S  &kp D     &hm LGUI F    &kp G    &trans                     &trans  &kp H    &hm LGUI J     &kp K   &kp L  &hm RSHIFT SEMI
                 &kp Z  &kp X  &kp C     &kp V    &kp B    &trans                     &trans  &kp N    &kp M &kp COMMA &kp DOT  &kp FSLH
-                           &kp ESC  &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(128,100,100) &kp SPACE &bt BT_CLR &bt BT_NXT &trans &kp RET  &kp BSPC &trans  &trans  &bootloader 
+                           &kp ESC  &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(128,100,100) &kp SPACE &trans &trans &trans &kp RET  &kp BSPC &trans  &trans  &bootloader 
             >;
         };
 
