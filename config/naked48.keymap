@@ -10,6 +10,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
+#define AS(keycode) &as LS(keycode) keycode
 
 / {
     behaviors {
@@ -38,9 +39,9 @@
 
         raise {
             bindings = <
-                &trans          &trans      &kp UP          &trans          &trans      &trans                              &trans          &kp N7      &kp N8         &kp N9          &trans         &trans
-                &trans          &kp LEFT    &kp DOWN        &kp RIGHT       &trans      &trans                              &trans          &kp N4      &kp N5         &kp N6          &trans         &trans
-                &trans          &trans      &trans          &trans          &trans      &trans                              &trans          &kp N1      &kp N2         &kp N3          &trans         &trans
+                &trans          &trans      &kp UP          &trans          &trans      &trans                              &trans          &trans      &hm AS(N7)     &hm AS(N8)      &hm AS(N9)      &trans
+                &trans          &kp LEFT    &kp DOWN        &kp RIGHT       &trans      &trans                              &trans          &trans      &hm AS(N4)     &hm AS(N5)      &hm AS(N6)      &hm AS(N0)
+                &trans          &trans      &trans          &trans          &trans      &trans                              &trans          &trans      &hm AS(N1)     &hm AS(N2)      &hm AS(N3)      &kp KP_DOT
                                 &trans      &trans          &trans          &trans      &trans      &trans      &trans      &trans          &trans      &trans         &trans          &bootloader
             >;
         };
