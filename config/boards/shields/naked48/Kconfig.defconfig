@@ -3,9 +3,6 @@
 
 if SHIELD_NAKED48
 
-CONFIG_ZMK_RGB_UNDERGLOW=y
-CONFIG_WS2812_STRIP=y
-
 config ZMK_KEYBOARD_NAME
     default "Nick Keyboard"
 
