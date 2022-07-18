@@ -15,27 +15,15 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // ----------------------------------------------------------------------------------------------------------
-            // |  TAB  |  Q   |  W   |  E   |  R   |  T   |-------|-------|   Y   |  U    |  I   |  O   |   P   |  \    |
-            // | SHIFT |  A   |  S   |  D   |  F   |  G   |-------|-------|   H   |  J    |  K   |  L   |   ;   |  '    |
-            // | CTRL  |  Z   |  X   |  C   |  V   |  B   |-------|-------|   N   |  M    |  ,   |  .   |   /   | ENTER |
-            // |-------|ADJUST| LCTL | LALT | LGUI | LOWR | SPACE | SPACE |  RAIS | LARW | DARW | UARW  | RARW  |-------|
-
-
             bindings = <
-                &kp Q    &kp W  &kp E     &kp R    &kp T    &kp N1                     &kp N4  &kp Y    &kp U     &kp I   &kp O     &kp P
-                &kp A  &kp S  &kp D     &kp F    &kp G    &kp N2                     &kp N5  &kp H    &kp J     &kp K   &kp L  &kp SEMI
-                &kp Z  &kp X  &kp C     &kp V    &kp B    &kp N3                     &kp N6  &kp N    &kp M &kp COMMA &kp DOT  &kp FSLH
-                           &kp N1  &kp N2 &kp N3 &kp N4 &kp N5 &kp SPACE &kp SPACE &kp N6  &kp N7 &kp N8  &kp N9  &bootloader 
+                &kp Q    &kp W  &kp E     &kp R    &kp T    &trans                     &trans  &kp Y    &kp U     &kp I   &kp O     &kp P
+                &kp A  &kp S  &kp D     &kp F    &kp G    &trans                     &trans  &kp H    &kp J     &kp K   &kp L  &kp SEMI
+                &kp Z  &kp X  &kp C     &kp V    &kp B    &trans                     &trans  &kp N    &kp M &kp COMMA &kp DOT  &kp FSLH
+                           &trans  &trans &trans &kp SPACE &trans &trans &trans &trans  &kp SPACE &trans  &trans  &bootloader 
             >;
         };
 
         lower {
-            // ----------------------------------------------------------------------------------------------------------
-            // |   ~   |  !   |  @   |  #   |  $   |  %   |-------|-------|   ^   |   &   |  *   |  (   |   )   |  DEL  |
-            // |       |  F1  |  F2  |  F3  |  F4  |  F5  |-------|-------|   F6  |   _   |  +   |  {   |   }   |   |   |
-            // |       |  F7  |  F8  |  F9  |  F10 |  F11 |-------|-------|   F12 | LS(#) |LS(|) |      |       |       |
-            // |-------|      |      |      |      |      |       |       |       | NEXT  | Vol- | Vol+ | PLAY  |-------|
             bindings = <
                 &kp TILDE &kp EXCL &kp AT   &kp HASH &kp DLLR  &kp PRCNT               &kp CARET &kp AMPS            &kp ASTRK           &kp LPAR     &kp RPAR         &kp DEL
                 &trans    &kp F1   &kp F2   &kp F3   &kp F4    &kp F5                  &kp F6    &kp UNDER           &kp PLUS            &kp LBRC     &kp RBRC         &kp PIPE
@@ -45,11 +33,6 @@
         };
 
         raise {
-            // ----------------------------------------------------------------------------------------------------------
-            // |   ~   |  1   |  2   |  3   |  4   |  5   |-------|-------|  6    |   7   |  8   |  9   |   0   |  DEL  |
-            // |  DEL  |  F1  |  F2  |  F3  |  F4  |  F5  |-------|-------|  F6   |   -   |  =   |  [   |   ]   |   \   |
-            // |       |  F7  |  F8  |  F9  |  F10 |  F11 |-------|-------|  F12  |   #   |  |   |      |       |       |
-            // |-------|      |      |      |      |      |       |       |       |       |      |      |       |-------|
             bindings = <
                 &kp TILDE &kp N1   &kp N2   &kp N3   &kp N4    &kp N5                &kp N6    &kp N7          &kp N8          &kp N9       &kp N0           &kp DEL
                 &kp DEL   &kp F1   &kp F2   &kp F3   &kp F4    &kp F5                &kp F6    &kp MINUS       &kp EQUAL       &kp LBKT     &kp RBKT         &kp BSLH
@@ -59,11 +42,6 @@
         };
 
         adjust {
-            // ----------------------------------------------------------------------------------------------------------
-            // |      |  NA  |  NA  |  NA  |  NA  |  NA  |------|------|  NA  |  NA  |  NA  |  NA  |  NA  |LALT(PRTSN)|
-            // |      |  NA  |  NA  |  NA  |  NA  |  NA  |------|------|  NA  |  NA  |  NA  |  NA  |  NA  |   PRTSN   |
-            // |      |  NA  |  NA  |  NA  |  NA  |  NA  |------|------|  NA  |  NA  |  NA  |  NA  |  NA  |LCTRL(DEL) |
-            // |------|      |      |      |      |      |BOOTLD|BOOTLD|      |      |      |      |      |-----------|
             bindings = <
                 &trans &none  &none  &none  &none  &none                          &none  &none  &none  &none   &none   &kp LA(PSCRN)
                 &trans &none  &none  &none  &none  &none                          &none  &none  &none  &none   &none   &kp PSCRN
