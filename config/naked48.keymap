@@ -85,7 +85,7 @@
 
         raise {
             bindings = <
-                &hm AS(GRAVE)   &trans      &kp UP          &trans          &trans      &trans                              &trans          &hm AS(BSLH) &hm AS(N7)     &hm AS(N8)      &hm AS(N9)      &hm AS(EQUALS)
+                &hm AS(GRAVE)   &trans      &kp UP          &trans          &trans      &trans                              &trans          &hm AS(BSLH) &hm AS(N7)     &hm AS(N8)      &hm AS(N9)      &hm AS(EQUAL)
                 &trans          &kp LEFT    &kp DOWN        &kp RIGHT       &trans      &trans                              &trans          &hm AS(APOS) &hm AS(N4)     &hm AS(N5)      &hm AS(N6)      &hm AS(MINUS)
                 &trans          &trans      &trans          &trans          &trans      &trans                              &trans          &trans       &hm AS(N1)     &hm AS(N2)      &hm AS(N3)      &hm AS(N0)
                                 &trans      &trans          &trans          &trans      &trans      &trans      &trans      &trans          &trans       &trans         &trans          &bootloader
